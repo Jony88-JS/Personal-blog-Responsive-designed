@@ -1,3 +1,10 @@
+:root{
+    /*Colores*/
+    --imperial-red: #E63946;
+    --light-blue: #31587A;
+    --dark-blue: #1D3557;
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -11,7 +18,7 @@ html{
 
 header{
     max-width: 850px;
-    min-width: 375px;  
+    min-width: 370px;  
     width: 100%;
     height: 22rem;
     display: flex;
@@ -30,11 +37,12 @@ header{
 }
 
 .J {
-    color: #E63946;
+    
+    color: var(--imperial-red);
 }
 
 .G{
-    color: #31587A;
+    color: var(--light-blue);
 }
 
 .ul-header{
@@ -51,7 +59,72 @@ header{
 .ul-header__li a{
     padding: 1rem;
     font-size: 1.2rem;
-    color: #1D3557;
+    color: var(--dark-blue);
     font-weight: 700;
     text-decoration: none;      
+}
+/*****MAIN***/
+.main{
+    max-width: 850px;
+    min-width: 370px; 
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+/***FRASE***/
+
+.container-frase{
+   
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--imperial-red);
+    justify-content: center;
+    align-items: center;
+        
+}
+
+.container-frase__h5{
+    width: 70%;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: var(--light-blue);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.container-frase__h6{
+   text-align: center;
+   font-size: 1rem;
+   color: var(--dark-blue);
+}
+
+/**Seccion de blog**/
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly; 
+    align-items: center;
+    width: 100%;
+    min-width: 150px;
+    height: 240px;
+    border-top: 3rem; 
+}
+
+.container1-h3{
+    color: var(--imperial-red);
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+.container1-fig{
+    display: flex;
+    align-items: center;
+}
+
+.container1-fig__img{
+    height: 15.5rem;
+    width: 20.5rem;
 }
